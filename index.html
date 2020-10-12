@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Backroads || Tour Company</title>
+  <title>Ryan Tours || Tour Company</title>
   <!-- favicon -->
   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
   <!-- font-awesome -->
@@ -16,14 +16,50 @@
 
 <body>
   <!-- header  -->
-  <header>
+  <header id="home">
+
+    <nav class="navbar">
+      <div class="nav-center">
+
+        <div class="nav-header">
+          <span class="logo">ryan <span class="tours-word">tours</span></span>
+          <button class="nav-toggle" id="nav-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="nav-link scroll-link">home</a></li>
+          <li><a href="#about" class="nav-link scroll-link">about</a></li>
+          <li><a href="#services" class="nav-link scroll-link">services</a></li>
+          <li><a href="#featured" class="nav-link scroll-link">featured</a></li>
+          <li><a href="#gallery" class="nav-link scroll-link">gallery</a></li>
+        </ul>
+
+        <ul class="nav-icons">
+          <li>
+            <a href="https://www.facebook.com" target="_blank" class="nav-icon"><i class="fab fa-facebook"></i></a>
+          </li>
+
+          <li>
+            <a href="https://www.twitter.com" target="_blank" class="nav-icon"><i class="fab fa-twitter"></i></a>
+          </li>
+
+          <li>
+            <a href="https://www.squarespace.com" target="_blank" class="nav-icon"><i class="fab fa-squarespace"></i></a>
+          </li>
+          <!-- end of nav social media icons -->
+        </ul>
+
+      </div>
+    </nav>
+
     <div class="hero">
       <div class="hero-banner">
-        <h1>continue exploring</h1>
+        <h1>welcome to ryan tours</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae explicabo debitis est autem dicta.</p>
-        <a href="#featured" class="btn hero-btn scroll-link">explore tours</a>
+        <a href="#featured" class="btn hero-btn scroll-link">popular tours</a>
       </div>
     </div>
+
   </header>
   <!-- end of header  -->
 
@@ -41,7 +77,7 @@
       <article>
 
         <div class="about-img">
-          <img class="about-photo" src="./images/about.jpeg" alt="">
+          <img class="about-photo" src="./images/about.jpeg" class="gallery-img" alt="">
         </div>
 
         <div class="about-text">
@@ -60,17 +96,21 @@
   <!-- end of about section -->
 
   <!-- services -->
+
   <section class="section services-section" id="services">
     <div class="section-title">
       <h2>our <span>services</span></h2>
     </div>
 
     <div class="section-center services">
+
+      <!-- Financing -->
+
       <article class="service-article">
 
-        <div class="service-img">
+        <span class="service-icon">
           <i class="fas fa-wallet fa-fw"></i>
-        </div>
+        </span>
 
         <div class="service-text">
           <h4>Financing</h4>
@@ -79,48 +119,254 @@
 
       </article>
 
+      <!-- Hiking -->
+
       <article class="service-article">
 
-        <div class="service-img">
+        <span class="service-icon">
           <i class="fas fa-tree fa-fw"></i>
-        </div>
+        </span>
 
         <div class="service-text">
-          <h4>Trip planning</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, voluptatem!</p>
+          <h4>hiking tours</h4>
+          <p class="service-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, eveniet.</p>
         </div>
 
       </article>
 
+      <!-- Accommodation -->
+
       <article class="service-article">
 
-        <div class="service-img">
+        <span class="service-icon">
           <i class="fas fa-socks fa-fw"></i>
-        </div>
+        </span>
 
         <div class="service-text">
           <h4>accommodation</h4>
           <p class="service-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, vel?</p>
         </div>
-      </article>
 
       </article>
+
+
     </div>
   </section>
+
   <!--end services -->
 
   <!-- featured tours -->
+
+  <section class="section featured-tours-section" id="featured">
+
+    <div class="section-title">
+      <h2>popular <span>tours</span></h2>
+    </div>
+
+    <div class="section-center tours">
+
+      <article class="tour-card">
+
+        <!-- tour image -->
+
+        <div class="tour-img-container">
+          <img src="/images/tour-1.jpeg" class="gallery-img" alt="" class="tour-img">
+          <div class="tour-date">november 20, 2021</div>
+        </div>
+
+        <!-- tour info -->
+
+        <div class="tour-info">
+          <h4>rio de janeiro adventure</h4>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta tempora maiores minus qui. Minus pariatur
+            velit deleniti maxime, odio nemo?</p>
+          <div class="tour-footer">
+            <span class="country"><i class="fas fa-map"></i> brazil</span>
+            <span class="tour-length">9 days</span>
+            <span class="price">from $1,300</span>
+          </div>
+
+        </div>
+      </article>
+
+      <article class="tour-card">
+
+        <!-- tour image -->
+
+        <div class="tour-img-container">
+          <img src="/images/tour-2.jpeg" class="gallery-img" alt="" class="tour-img">
+          <div class="tour-date">december 2, 2021</div>
+        </div>
+
+        <!-- tour info -->
+
+        <div class="tour-info">
+          <h4>best of havana</h4>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta tempora maiores minus qui. Minus pariatur
+            velit deleniti maxime, odio nemo?</p>
+          <div class="tour-footer">
+            <span class="country"><i class="fas fa-map"></i> cuba</span>
+            <span class="tour-length">11 days</span>
+            <span class="price">from $1,400</span>
+          </div>
+
+        </div>
+      </article>
+
+      <article class="tour-card">
+
+        <!-- tour image -->
+
+        <div class="tour-img-container">
+          <img src="/images/tour-3.jpeg" class="gallery-img" alt="" class="tour-img">
+          <div class="tour-date">june 6, 2021</div>
+        </div>
+
+        <!-- tour info -->
+
+        <div class="tour-info">
+          <h4>trip to new york</h4>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta tempora maiores minus qui. Minus pariatur
+            velit deleniti maxime, odio nemo?</p>
+          <div class="tour-footer">
+            <span class="country"><i class="fas fa-map"></i> USA</span>
+            <span class="tour-length">8 days</span>
+            <span class="price">from $1,500</span>
+          </div>
+
+        </div>
+      </article>
+
+      <article class="tour-card">
+
+        <!-- tour image -->
+
+        <div class="tour-img-container">
+          <img src="/images/tour-4.jpeg" class="gallery-img" alt="" class="tour-img">
+          <div class="tour-date">july 8, 2021</div>
+        </div>
+
+        <!-- tour info -->
+
+        <div class="tour-info">
+          <h4>safari in nairobi</h4>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta tempora maiores minus qui. Minus pariatur
+            velit deleniti maxime, odio nemo?</p>
+
+          <div class="tour-footer">
+            <span class="country"><i class="fas fa-map"></i> kenya</span>
+            <span class="tour-length">21 days</span>
+            <span class="price">from $2,500</span>
+          </div>
+
+        </div>
+      </article>
+
+    </div>
+
+    <div class="all-tours">
+      <a href="#" class="btn">all tours</a>
+    </div>
+  </section>
+
   <!-- end of featured tours -->
 
   <!-- contact -->
-
+  <section class="section contact-section" id="contact">
+    <div class="section-center contact-center">
+      <article class="contact-info">
+        <h3 class="contact-title">Want Latest Tour Info And Updates?</h3>
+        <p class="sign-up">Sign up for newsletter and stay up to date</p>
+      </article>
+      <form class="contact-form">
+        <input class="form-ctrl" type="email" placeholder="your email">
+        <button class="contact-btn">submit</button>
+      </form>
+    </div>
+  </section>
   <!-- end of contact -->
 
   <!-- gallery  -->
-
+  <section class="section gallery-section" id="gallery">
+    <div class="gallery-img-container">
+      <img src="images/tour-1.jpeg" class="gallery-img" alt="">
+      <a href="#" class="gallery-icon">
+        <i class="fas fa-search"></i>
+      </a>
+    </div>
+    <div class="gallery-img-container">
+      <img src="images/tour-2.jpeg" class="gallery-img" alt="">
+      <a href="#" class="gallery-icon">
+        <i class="fas fa-search"></i>
+      </a>
+    </div>
+    <div class="gallery-img-container">
+      <img src="images/tour-3.jpeg" class="gallery-img" alt="">
+      <a href="#" class="gallery-icon">
+        <i class="fas fa-search"></i>
+      </a>
+    </div>
+    <div class="gallery-img-container">
+      <img src="images/tour-4.jpeg" class="gallery-img" alt="">
+      <a href="#" class="gallery-icon">
+        <i class="fas fa-search"></i>
+      </a>
+    </div>
+    <div class="gallery-img-container">
+      <img src="images/tour-5.jpeg" class="gallery-img" alt="">
+      <a href="#" class="gallery-icon">
+        <i class="fas fa-search"></i>
+      </a>
+    </div>
+    <div class="gallery-img-container">
+      <img src="images/tour-6.jpeg" class="gallery-img" alt="">
+      <a href="#" class="gallery-icon">
+        <i class="fas fa-search"></i>
+      </a>
+    </div>
+    <div class="gallery-img-container">
+      <img src="images/tour-1.jpeg" class="gallery-img" alt="">
+      <a href="#" class="gallery-icon">
+        <i class="fas fa-search"></i>
+      </a>
+    </div>
+    <div class="gallery-img-container">
+      <img src="images/tour-2.jpeg" class="gallery-img" alt="">
+      <a href="#" class="gallery-icon">
+        <i class="fas fa-search"></i>
+      </a>
+    </div>
+  </section>
   <!-- end of gallery  -->
 
   <!-- footer -->
+
+  <footer class="section footer-section">
+
+    <ul class="footer-nav">
+      <li><a href="#home" class="footer-link scroll-link">home</a></li>
+      <li><a href="#about" class="footer-link scroll-link">about</a></li>
+      <li><a href="#services" class="footer-link scroll-link">services</a></li>
+      <li><a href="#featured" class="footer-link scroll-link">featured</a></li>
+      <li><a href="#gallery" class="footer-link scroll-link">gallery</a></li>
+    </ul>
+
+    <ul class="footer-icons">
+      <li>
+        <a href="https://www.facebook.com" target="_blank" class="footer-icon"><i class="fab fa-facebook"></i></a>
+      </li>
+      <li>
+        <a href="https://www.twitter.com" target="_blank" class="footer-icon"><i class="fab fa-twitter"></i></a>
+      </li>
+      <li>
+        <a href="https://www.squarespace.com" target="_blank" class="footer-icon"><i class="fab fa-squarespace"></i></a>
+      </li>
+    </ul>
+    <p class="copyright">
+      copyright &copy; Backroads travel tours company
+      <span id="date"></span>. all rights reserved
+    </p>
+  </footer>
 
   <!-- js -->
   <script src="./js/app.js"></script>
